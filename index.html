@@ -4,22 +4,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <title>Conversor De Moedas</title>
     <link rel="stylesheet" href="./style.css">
 </head>
 
 <body>
 
+    <img class="logo-gif" src="./assets/gif.gif" alt="Logo-gif">
+
     <main>
         <label>
             Converter <b>de</b>
-            <section>
+            <select>
                 <option>R$ Real Brasileiro</option>
-            </section>
+            </select>
         </label>
 
         <label>
-            Converter <b>para</b>
+            converter <b>para</b>
             <select>
                 <option>US$ Dólar Americano</option>
                 <option>€ Euro</option>
@@ -29,33 +34,27 @@
         </label>
 
         <label>
-            Valor
+            <b>Valor</b>
             <input placeholder="R$ 10.000,00">
         </label>
 
         <button>Converter</button>
         <section>
-        <div>
-            <img src="./assets/logo-Brasil.png" alt="Bandeira-do-Brasil-moeda-a-converter">
-            <P>Real Brasileiro</P>
-            <p>R$10.000,00</p>
-        </div>
+            <div class="resultado">
+                <img src="./assets/logo-Brasil.png" alt="Bandeira-do-Brasil-moeda-a-converter">
+                <P class="moeda">Real Brasileiro</P>
+                <p class="valor-moeda">R$10.000,00</p>
+            </div>
 
-        <img src="./assets/seta.png">
+            <img class="seta-img" src="./assets/seta.png">
 
-        <div>
-            <img src="./assets/logo-USA.png" alt="Bandeira-USA-moeda-convertida">
-            <p>Dólar Americano</p>
-            <p>US$2.000,00</p>
-        </div>
-
-        
-    </section>
-
-
-
-
-    </main>
+            <div class="resultado">
+                <img src="./assets/logo-USA.png" alt="Bandeira-USA-moeda-convertida">
+                <p class="moeda">Dólar Americano</p>
+                <p class="valor-moeda">US$2.000,00</p>
+            </div>
+        </section>
+        </main>
 
 
 
